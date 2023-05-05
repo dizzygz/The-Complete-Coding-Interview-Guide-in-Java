@@ -20,21 +20,21 @@ public final class Staircase {
     // optimize the recursive algorithm via Memoization
     public static int countViaMemoization(int n) {
 
-        int[] cache = new int[n + 1];
-        return count(n, cache);
+        int[] memo = new int[n + 1];
+        return count(n, memo);
     }
 
-    private static int count(int n, int[] cache) {
+    private static int count(int n, int[] memo) {
         if (n == 0) {
             return 1;
         } else if (n < 0) {
             return 0;
-        } else if (cache[n] > 0) {
-            return cache[n];
+        } else if (memo[n] > 0) {
+            return memo[n];
         }
 
-        cache[n] = count(n - 1, cache) + count(n - 2, cache) + count(n - 3, cache);
+        memo[n] = count(n - 1, memo) + count(n - 2, memo) + count(n - 3, memo);
 
-        return cache[n];
+        return memo[n];
     }
 }

@@ -6,7 +6,7 @@ public class Main {
     
     public static void main(String[] args) {
 
-        KnightTour knightTour = new KnightTour(GRID_SIZE);
+        MyknightTour knightTour = new MyknightTour(GRID_SIZE);
         
         // visited[][] stores the current path
         int visited[][] = new int[GRID_SIZE][GRID_SIZE];

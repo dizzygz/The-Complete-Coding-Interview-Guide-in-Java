@@ -16,7 +16,8 @@ public class Main {
         System.out.println("\n\nDuplicates are generated but they are eliminated via Set: ");
         System.out.println(permutationSet);
       
-        List<String> permutationList = NoDuplicatePermutation.permute(TEXT);
+        //List<String> permutationList = NoDuplicatePermutation.permute(TEXT);
+        List<String> permutationList = MyPermutation.permute(TEXT);
         System.out.println("\n\nDuplicates are  not generated: ");
         System.out.println(permutationList);
     }

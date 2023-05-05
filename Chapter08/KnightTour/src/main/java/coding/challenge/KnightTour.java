@@ -14,7 +14,7 @@ public class KnightTour {
     }
 
     // all 8 possible movements for a knight
-    public static final int COL[] = {1, 2, 2, 1, -1, -2, -2, -1, 1};
+    public static final int COL[] = {1, 2, 2,  1, -1, -2, -2, -1, 1};
     public static final int ROW[] = {2, 1, -1, -2, -2, -1, 1, 2, 2};
 
     public void knightTour(int r, int c, int cell, int visited[][]) {

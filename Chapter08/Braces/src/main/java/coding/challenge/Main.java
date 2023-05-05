@@ -6,7 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
       
-       List<String> results = Braces.embrace(3);       
+       List<String> results = MyBraces.embrace(3);       
        
        System.out.println("Output: " + results);
     }

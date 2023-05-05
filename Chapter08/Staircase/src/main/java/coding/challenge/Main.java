@@ -2,7 +2,7 @@ package coding.challenge;
  
 public class Main {
 
-    private static final int STEPS = 3;
+    private static final int STEPS = 5;
     
     public static void main(String[] args) {        
                 
